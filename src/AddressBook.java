@@ -15,6 +15,10 @@ public class AddressBook {
         buddyList.remove(buddy);
     }
 
+    public String getBuddyName(BuddyInfo buddy){
+        return buddy.getName();
+    }
+
     public static void main(String[] args){
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         BuddyInfo buddy2 = new BuddyInfo("Rola", "Carleton", "613");
@@ -23,6 +27,6 @@ public class AddressBook {
         addressBook.removeBuddy(buddy);
         addressBook.addBuddy(buddy2);
         addressBook.removeBuddy(buddy2);
-        
+        addressBook.getBuddyName(buddy2);
     }
 }
